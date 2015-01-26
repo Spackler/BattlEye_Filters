@@ -1,0 +1,16 @@
+// A3Wasteland - scripts.txt BattlEye filters by AgentRev
+
+
+5 "addWeaponTurret"
+5 "LightningBolt"
+5 "BIS_fnc_AAN" // AAN news banner crap
+5 "ctrlCreate" // command used to build script menus
+5 "name _x, ceil (player distance _x)],0,0.02]"
+5 "addEventHandler [\"Fired\"" !"if (_this select 1 == \"Put\""
+
+1 "setDamage" !"unit killed becouse of getting stuck" !"sleep random _delay;" !"case \"action_suicide\":" !"if (_criticalHit) then" !"_mine = createMine [_mineType, _pos, [], 0];" !"player setVariable [\"performingDuty\", nil];" !"FAR_killerSuspects" !"_target playMove format [\"AmovPpneMstpSrasW%1Dnon\", _target call getMoveWeapon];" !"if !(\"Medikit\" in items player) then" !"text = \Autoheal\;" !"call _checkAbortConditions;" !"player removeItem \"FirstAidKit\";" !"Are you sure you want to suicide?" !"if (_health > 1) then {hint parseText STARVATION" !"setPlayerRespawnTime 1e11;" !"[\"First Aid Completed!\", 5] call mf_notify_client;" !"sleep 5;\ndeleteVehicle _this"  !"isSCALAR" !"_vehicle = objectFromNetId (_this select 0);" !"if (_vehicle isKindOf \"Boat_Armed_01_base_F\")" !"if (_ammo != 1) then { _veh setVehicleAmmo _ammo };" !"if (_ammo != 1) then { _veh2 setVehicleAmmo _ammo };" !"if (!isNil \"_fuel\") then {_obj setFuel _fuel };" !"_boat = createVehicle [_boatType, _pos, [], 0, \"None\"];" !"_currHeli setVariable [call vChecksum, true, false];" !"_vehicle = createVehicle [_vehicleType, _pos, [], 0, \"None\"];" !"You need to eat to survive here!" !"CBA_EVENT_KEY_LOGIC setDamage 1;" !"_target, false] call A3W_fnc_MP" !"thirstLevel = 100;\nhungerLevel = 100;" !"if ((_x select 1) > (_wire distance _object)) then " !"A3W_atmArray"
+5 "forEach playableUnits" !"_enemyCount = _enemyCount + 1;" !"{ if (isPlayer _x) then { _players pushBack _x } } forEach playableUnits" !"_punishCount = 0" !"hText ctrlSetText format[\"Health: %1\"" !"if (_check == 0) exitWith{};\n\nswitch (_switch) do" !"[/"bmoney/",_bmoney+" !"[/"cmoney/",_cmoney+"
+1 "onMapSingleClick" !"onplayerdisconnected" !"closeDialog 0;\n[\"A3W_teleport\", \"onMapSingleClick\","
+//1 "deleteVehicle" !"moveOut player;" !"_key in actionKeys" !"\"HelicopterExploSmall\" createVehicle (position _x);" !"_heli setvariable [\"zlt_ropes\", []" !"playSound \"FD_CP_Not_Clea" !"_isDestructable && _hasDestructionEffects" !"deleteVehicle CBA_EVENT_KEY_LOGIC;" !"deleteVehicle (L_ES_dummyArray select 0);" !"if !(_logic call (_logic getVariable"
+1 "clearGroupIcons"
+1 "openMap"

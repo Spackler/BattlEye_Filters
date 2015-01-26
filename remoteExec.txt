@@ -1,0 +1,6 @@
+// A3Wasteland - remoteExec.txt BattlEye filters by AgentRev
+
+5 "" !="" !="true" !="vehicle this (flyInHeight \d+|land 'LAND')" !"p_handle_mprespawn" // Allows UAV usage
+
+
+// Feel free to mass-ban all GUIDs from remoteexec.log

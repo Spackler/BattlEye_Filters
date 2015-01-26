@@ -1,0 +1,16 @@
+// A3Wasteland - setVariable.txt BattlEye filters by AgentRev
+
+1 "cmoney" !="^\"cmoney\" = 2500"
+1 "bmoney"
+
+5 "^A3W_(atmEditorPlaced|(dammaged|engine|handleDamage)EH|missionMarkerName|(object|vehicle)ID|purchasedStoreObject|storeSellBox)"
+5 "^BIS_fnc_MP_queue$"
+5 "^BuildingLoot"
+5 "^captureTriggerMarker"
+5 "^fpsFix_(eventHandlers|simulationCooloff)"
+5 "^Lootready"
+5 "^objSaving_lastSave"
+5 "^processedDeath"
+5 "^spawnBeacon_lastUse"
+5 "^storeNPC_(face|nearestBuilding|setupComplete)"
+5 "^vehSaving_(hours(Alive|Unused)|last(Save|Use)|spawningTime)"

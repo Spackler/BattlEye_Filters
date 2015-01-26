@@ -1,0 +1,36 @@
+// A3Wasteland - createVehicle.txt BattlEye filters by AgentRev, JoSchaap, and k4n30
+
+// Set everything to 1 if you are using Zeus
+
+// Vehicles
+
+5 "^[BOI]_(?!\d)((APC|Boat|Heli|MBT|MRAP|Plane|Quadbike|SDV|Truck|UGV)_|Lifeboat)"
+5 "^[BOI]_(?!\d)([HG]MG|Mortar|static_A[AT])_" !"_(weapon|support)_" // Allows disassembly
+5 "^[BOI]_UAV_" !"_(AI|01_)"
+
+// Ammo boxes
+
+1 "^Box_" !"^Box_(NATO_AmmoVeh)_F"
+1 "^[CBOI]G?_supplyCrate_"
+
+// Civilian & guerilla stuff
+
+1 "^C_" // Comment this line if you need to allow civilian units
+1 "^C_((Hatchback|Heli|Offroad|Quadbike|SUV|Van|Boat)_|Rubberboat)" // Uncomment this line if line above is commented
+
+5 "^[BOI]_G_" // Comment this line if you need to allow guerilla units
+1 "^[BOI]_G_(Mortar|Offroad|Van|Boat)" // Uncomment this line if line above is commented
+
+// Buildings & objects (128-char limit between quotes)
+
+1 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic_V\d|Canister(Fuel|Oil)|Can_V\d|CashDesk|Ground_sheet_folded_OPFOR|Money|Rope)_F" !="^Land_(SatellitePhone|FMradio|Sleeping_bag_folded|Laptop_unfolded|HandyCam|TentDome|Suitcase|PainKillers)_F"
+
+// Game logic (comment these if it causes problems with some addons)
+
+5 "^Lightning"
+5 "^Logic"
+5 "^Module"
+
+// VR entities (blue/red/green/purple ghosts)
+
+5 "^[CBOI]_Soldier_VR_"
